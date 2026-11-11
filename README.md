@@ -4,21 +4,21 @@ A responsive, multi-section documentation website built with plain HTML, CSS, an
 
 ## Run locally
 
-Open `index.html` in a browser, or serve this folder with the VS Code Live Server extension. Each documentation page is its own HTML file inside the `pages/` folder, for example:
+Open `index.html` in a browser, or serve this folder with the VS Code Live Server extension. Pages use the `?page=` query parameter, so individual documentation routes can be opened directly, for example:
 
-- `pages/chronicle-beginning.html`
-- `pages/products-handmade-marketplace.html`
-- `pages/development-architecture.html`
+- `index.html?page=chronicle/beginning`
+- `index.html?page=products/handmade-marketplace`
+- `index.html?page=development/architecture`
 
 ## Site structure
 
-The documentation covers the project overview, Chronicle, People, Products, Development, The Road Ahead, and About. Each page is a static HTML file (`index.html` in the root, all others in `pages/`); `script.js` handles search, the mobile menu, and accordions; visual styles and responsive behavior are in `style.css`.
+The documentation covers the project overview, Chronicle, People, Products, Development, The Road Ahead, and About. Page content and navigation are defined in `script.js`; shared structure and metadata are in `index.html`; visual styles and responsive behavior are in `style.css`.
 
 The site includes a searchable page index, responsive navigation, breadcrumbs, on-page contents, and previous/next links.
 
 ## Content accuracy
 
-Only details established by the project brief are stated as facts. Unconfirmed names, product capabilities, partnerships, technical specifications, dates, and commitments are marked as information to be supplied or verified. Update the corresponding page file only with reviewed project information.
+Only details established by the project brief are stated as facts. Unconfirmed names, product capabilities, partnerships, technical specifications, dates, and commitments are marked as information to be supplied or verified. Update the corresponding page data in `script.js` only with reviewed project information.
 
 ## External resources
 
